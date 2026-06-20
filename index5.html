@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Эпоха</title>
+  <link rel="stylesheet" href="css/c.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header" style="position: absolute;">
+  <div class="container nav">
+    <div class="logo" onclick="window.location.href='index.html'">ЭПОХА</div>
+
+    <button class="burger" id="burgerBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+
+    <div class="mobile-menu" id="mobileMenu">
+
+      <nav class="menu">
+        <a href="index3.html">Гастроспектакли</a>
+        <a href="index2.html">О нас</a>
+        <a href="#">Галерея</a>
+        <a href="#">Сувениры</a>
+      </nav>
+
+      <button class="btn-outline">
+        Войти
+      </button>
+
+    </div>
+  </div>
+</header>
+
+
+
+
+<section class="oplata">
+  <div class="container">
+    <h2 class="title">ОПЛАТА</h2>
+    <div class="oplata-wrapper">
+      <div class="oplata-form">
+
+        <div class="form-group">
+          <label>Имя:</label>
+          <input type="text" placeholder="Введите имя...">
+        </div>
+
+        <div class="form-group">
+          <label>Телефон:</label>
+          <input type="text" placeholder="+7 (....">
+        </div>
+
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" placeholder="Epoha@...">
+        </div>
+
+        <div class="form-group">
+          <label>Способ платежа</label>
+
+          <div class="oplata-methods">
+
+            <button class="oplata-card active">
+              <img src="img/o-1.png" alt="img">
+            </button>
+
+            <button class="oplata-card">
+              <img src="img/o-2.png" alt="img">
+            </button>
+
+            <button class="oplata-card add-card">
+              <div class="circle">+</div>
+            </button>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Номер карты:</label>
+          <input type="text" placeholder="- - -   - - -   - - -   - - -">
+        </div>
+
+        <button class="oplata-btn">
+          Оформить заказ
+        </button>
+      </div>
+
+
+
+      <div class="check">
+        <h3>Выбранные товары</h3>
+        <div class="check-item">
+          <div>
+            <div class="item-title">
+                <p>Статуэтка Екатерины 2. Глиненяная кукла ручной работы</p>
+            </div>
+            <span>дата: 11 мая</span>
+          </div>
+
+          <div class="item-right">
+            <span>1 шт</span>
+            <span>1500 руб</span>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <div>
+            <div class="item-title">
+                <p>Билет “Век Екатерин...</p>
+            </div>
+            <span>дата: 11 мая</span>
+          </div>
+
+          <div class="item-right">
+            <span>1 шт</span>
+            <span>1500 руб</span>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <div>
+            <div class="item-title">
+                <p>Шляпка 20-века...</p>
+            </div>
+            <span>дата: 11 мая</span>
+          </div>
+
+          <div class="item-right">
+            <span>1 шт</span>
+            <span>1500 руб</span>
+          </div>
+        </div>
+
+        <div class="check-itog">
+          Итого к оплате: 5500 руб
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+
+      <div class="footer-col logo-col">
+        <div class="logo-footer">ЭПОХА</div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Связаться с нами:</h4>
+        <p>info@epoha.ru</p>
+        <p>+7 (999) 123-45-67</p>
+        <p class="policy">Политика конфиденциальности</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>На странице:</h4>
+
+        <div class="footer-links">
+
+          <div class="links-col">
+            <a href="#">О проекте</a>
+            <a href="#">Спектакль</a>
+            <a href="#">Мероприятия</a>
+          </div>
+
+          <div class="links-col">
+            <a href="#">Дополнительно</a>
+            <a href="#">Отзывы</a>
+          </div>
+
+        </div>
+
+        <p class="copyright">© 2024 РОСЭПОХА</p>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
