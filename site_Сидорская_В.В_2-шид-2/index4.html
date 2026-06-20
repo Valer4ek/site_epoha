@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Эпоха</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/c.css">
+</head>
+<body>
+
+<header class="header" style="position: relative;">
+  <div class="container nav">
+    <div class="logo" onclick="window.location.href='index.html'">ЭПОХА</div>
+
+    <button class="burger" id="burgerBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+
+    <div class="mobile-menu" id="mobileMenu">
+
+      <nav class="menu">
+        <a href="index3.html">Гастроспектакли</a>
+        <a href="index2.html">О нас</a>
+        <a href="#">Галерея</a>
+        <a href="#">Сувениры</a>
+      </nav>
+
+      <button class="btn-outline">
+        Войти
+      </button>
+
+    </div>
+  </div>
+</header>
+
+<section class="spectakl spectakl-page">
+  <div class="container hero-content">
+    <h1>ВЕК ЕКАТЕРИНЫ II.<br>ВКУС ИМПЕРИИ</h1>
+    <p>История, драмма, интриги, среднеековье</p>
+    <button class="btn" onclick="window.location.href='index5.html'">Перейти к оплате</button>
+  </div>
+</section>
+
+<section class="spactakl-information">
+    <div class="container">
+        <div class="spectakl-box">
+
+            <div class="spectakl-info">
+                <p>Гастроспектакль «Вкус империи» переносит гостей за стол императрицы Екатерины Великой. Эпоха роскоши, пудры и тайных заговоров раскроется через ароматы, вкусы и живые диалоги с историей судьбы оказавшейся в осаждённом городе. </p>
+                <p>Сюжет:  Гастроспектакль переносит гостей на императорский бал в эпоху Екатерины II. За ужином с Потемкиным и Дашковой известие о бунте Пугачева смешивает карты. Шпион охотится за «скифским золотом», а императрица предлагает опасную игру: угадать яд в соусе. Десерт «Горящая империя» догорит под тост за просвещенный абсолютизм.</p>
+            </div>
+
+            <div class="spectakl-image">
+                <img src="img/7.png" alt="img">
+            </div>
+
+            </div>
+    </div>
+</section>
+
+<section class="parametr">
+  <div class="container">
+    <h2 class="title">ПАРАМЕТР</h2>
+    <div class="parametr-block">
+
+      <div class=" block-p">
+        <div class="punkt-p">
+          <p>Формат участия гостей: интрерактивный</p>
+        </div>
+      </div>
+
+      <div class=" block-p">
+        <div class="punkt-p">
+          <p>продолжительность гастроспектакля : 2 недели</p>
+        </div>
+      </div>
+
+      <div class="block-p">
+        <div class="punkt-p">
+          <p>Количество подач: 5-7 порций за сеанс</p>
+        </div>
+      </div>
+
+      <div class="block-p">
+        <div class="punkt-p">
+          <p>Возрастное ограничение: 16+</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="tickets">
+  <div class="container">
+
+    <h2 class="title">
+      РАСПИСАНИЕ БИЛЕТОВ
+    </h2>
+
+    <div class="tickets-wrapper">
+      <div class="calendar-side">
+        <div id="calendar"></div>
+      </div>
+
+      <div class="schedule-right">
+        <h3 class="schedule-date"id="selectedDate">11 МАЯ</h3>
+        <div class="sessions" id="sessionsContainer"></div>
+        <div class = "session-info-box">
+          <div class="session-info">
+            <p>
+              <strong>Статус:</strong>
+              <span id="ticketStatus">
+                доступно
+              </span>
+            </p>
+
+            <p>
+              Формат билета:
+              обычный
+            </p>
+          </div>
+
+          <button class="pay-btn" onclick="window.location.href='index5.html'">
+            Перейти к оплате
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="galereya">
+  <div class="container">
+    <h2 class="title">ГАЛЕРЕЯ СПЕКТАКЛЯ</h2>
+      <div class="galereya-img">
+        <img src="img/g-1.png" alt="img" class="img1-g">
+        <img src="img/g-2.png" alt="img" class="img2-g">
+        <img src="img/g-3.png" alt="img" class="img3-g">
+        <img src="img/g-4.png" alt="img" class="img4-g">
+        <img src="img/g-5.png" alt="img" class="img5-g">
+        <img src="img/g-6.png" alt="img" class="img6-g">
+      </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+
+      <div class="footer-col logo-col">
+        <div class="logo-footer">ЭПОХА</div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Связаться с нами:</h4>
+        <p>info@epoha.ru</p>
+        <p>+7 (999) 123-45-67</p>
+        <p class="policy">Политика конфиденциальности</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>На странице:</h4>
+
+        <div class="footer-links">
+
+          <div class="links-col">
+            <a href="#">О проекте</a>
+            <a href="#">Спектакль</a>
+            <a href="#">Мероприятия</a>
+          </div>
+
+          <div class="links-col">
+            <a href="#">Дополнительно</a>
+            <a href="#">Отзывы</a>
+          </div>
+
+        </div>
+
+        <p class="copyright">© 2024 РОСЭПОХА</p>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+
+<script src="js/calendar.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

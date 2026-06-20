@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Эпоха</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/c.css">
+</head>
+<body>
+
+<header class="header" style="position: absolute;">
+  <div class="container nav">
+    <div class="logo" onclick="window.location.href='index.html'">ЭПОХА</div>
+
+    <button class="burger" id="burgerBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+
+    <div class="mobile-menu" id="mobileMenu">
+
+      <nav class="menu">
+        <a href="index3.html">Гастроспектакли</a>
+        <a href="index2.html">О нас</a>
+        <a href="#">Галерея</a>
+        <a href="#">Сувениры</a>
+      </nav>
+
+      <button class="btn-outline">
+        Войти
+      </button>
+
+    </div>
+  </div>
+</header>
+
+<section class="gastro">
+  <div class="container">
+    <h2 class="title">ГАСТРОСПЕКТАКЛИ</h2>
+    <div class="row g-3">
+      <div class=" col-md-4">
+        <div class="punkt">
+          <p>Гастроспектакль - это театрализованный ужин, в ходе которого идет взаимодействие с гостями</p>
+        </div>
+      </div>
+      <div class=" col-md-4">
+        <div class="punkt">
+          <p>Продолжительность текущего гастроспектакля 2 недели. Успейте посетить!</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="punkt">
+          <p>Количество подач: <br>5-7 порций за сеанс <br> (дегустационный формат)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="katalog">
+  <div class="container">
+    <h2 class="title">КАТАЛОГ</h2>
+      <div class="row align-items-center filters">
+
+          <div class="col-md-8 d-flex gap-4 flex-wrap">
+
+            <div class="dropdown">
+              <button class="filter-btn" data-bs-toggle="dropdown">
+                По статусу <span class="arrow"></span>
+              </button>
+              <ul class="dropdown-menu custom-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    data-type="status"
+                    data-value="all"
+                    href="#"
+                  >Все</a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    data-type="status"
+                    data-value="active"
+                    href="#"
+                  >Активные</a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    data-type="status"
+                    data-value="archive"
+                    href="#"
+                  >Архив</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <button class="filter-btn" data-bs-toggle="dropdown">
+                По дате <span class="arrow"></span>
+              </button>
+              <ul class="dropdown-menu custom-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item filter-option active-filter"
+                    data-type="date"
+                    data-value="all"
+                    href="#"
+                  >Все</a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    data-type="date"
+                    data-value="may"
+                    href="#"
+                  >Май</a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    data-type="date"
+                    data-value="april"
+                    href="#"
+                  >Апрель</a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    data-type="date"
+                    data-value="june"
+                    href="#"
+                  > Июнь</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <button class="filter-btn" data-bs-toggle="dropdown">
+                По популярности <span class="arrow"></span>
+              </button>
+              <ul class="dropdown-menu custom-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item filter-option active-filter"
+                    data-type="popular"
+                    data-value="all"
+                    href="#"
+                  >Все</a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    data-type="popular"
+                    data-value="popular"
+                    href="#"
+                  >Популярные</a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    data-type="popular"
+                    data-value="new"
+                    href="#"
+                  > Новые</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <button class="filter-btn" data-bs-toggle="dropdown">
+                По цене <span class="arrow"></span>
+              </button>
+              <ul class="dropdown-menu custom-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item filter-option active-filter"
+                    data-type="price"
+                    data-value="all"
+                    href="#"
+                  > Все</a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    data-type="price"
+                    data-value="high"
+                    href="#"
+                  >Дорогие</a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item filter-option"
+                    data-type="price"
+                    data-value="low"
+                    href="#"
+                  >Дешевые</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="search">
+              <input type="text" id="searchInput" placeholder="Поиск по названию...">
+                <button class="search-btn">
+                  <img src="img/poisk.svg" alt="img" alt="">
+                </button>
+            </div>
+          </div>
+        
+      </div>
+
+
+
+
+
+      <div class="row g-4 catalog-row">
+        <div class="col-md-4 catalog-item active may popular high">
+          <div class="catalog-card">
+
+            <img src="img/1.png" alt="img" class="catalog-img">
+
+            <div class="catalog-body">
+              <h5 class="catalog-title">
+                Век Екатерины 2
+              </h5>
+
+              <p class="catalog-text">
+                Тема: Век империи<br>
+                Продолжительность: 3 часа<br>
+                Дата: С 3 по 22 мая
+              </p>
+            </div>
+
+            <button class="catalog-btn" onclick="window.location.href='index.html'">
+              На страницу спектакля
+            </button>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-4 catalog-item archive april new low">
+          <div class="catalog-card">
+
+            <img src="img/c-2.png" alt="img" class="catalog-img">
+
+            <div class="catalog-body">
+              <h5 class="catalog-title">
+                Времена Достоевского
+              </h5>
+
+              <p class="catalog-text">
+                Тема: Литературный век<br>
+                Продолжительность: 3 часа<br>
+                Дата: С 3 по 20 апреля
+              </p>
+            </div>
+
+            <button class="catalog-btn">
+              На страницу спектакля
+            </button>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-4 catalog-item active may popular high">
+          <div class="catalog-card">
+
+            <img src="img/c-3.png" alt="img" class="catalog-img">
+
+            <div class="catalog-body">
+              <h5 class="catalog-title">
+                Петр 1
+              </h5>
+
+              <p class="catalog-text">
+                Тема: История<br>
+                Продолжительность: 3 часа<br>
+                Дата: С 3 по 22 мая
+              </p>
+            </div>
+
+            <button class="catalog-btn">
+              На страницу спектакля
+            </button>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-4 catalog-item archive june new low">
+          <div class="catalog-card">
+
+            <img src="img/c-4.png" alt="img" class="catalog-img">
+
+            <div class="catalog-body">
+              <h5 class="catalog-title">
+                Пандемия
+              </h5>
+
+              <p class="catalog-text">
+                Тема: Мировая угроза<br>
+                Продолжительность: 3 часа<br>
+                Дата: С 1 по 12 июля
+              </p>
+            </div>
+
+            <button class="catalog-btn">
+              На страницу спектакля
+            </button>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-4 catalog-item active may popular high">
+          <div class="catalog-card">
+
+            <img src="img/c-5.png" alt="img" class="catalog-img">
+
+            <div class="catalog-body">
+              <h5 class="catalog-title">
+                Сельская жизнь
+              </h5>
+
+              <p class="catalog-text">
+                Тема: Средние века<br>
+                Продолжительность: 3 часа<br>
+                Дата: С 3 по 22 мая
+              </p>
+            </div>
+
+            <button class="catalog-btn">
+              На страницу спектакля
+            </button>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-4 catalog-item archive august new low">
+          <div class="catalog-card">
+
+            <img src="img/c-6.png" alt="img" class="catalog-img">
+
+            <div class="catalog-body">
+              <h5 class="catalog-title">
+                Благотворительный сеанс
+              </h5>
+
+              <p class="catalog-text">
+                Тема: Участие гостя<br>
+                Продолжительность: 3 часа<br>
+                Дата: С 5 по 11 август
+              </p>
+            </div>
+
+            <button class="catalog-btn">
+              На страницу спектакля
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="show-wrapper">
+        <button class="esho-btn" id="showMoreBtn">
+          Еще спектакли
+        </button>
+      </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+
+      <div class="footer-col logo-col">
+        <div class="logo-footer">ЭПОХА</div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Связаться с нами:</h4>
+        <p>info@epoha.ru</p>
+        <p>+7 (999) 123-45-67</p>
+        <p class="policy">Политика конфиденциальности</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>На странице:</h4>
+
+        <div class="footer-links">
+
+          <div class="links-col">
+            <a href="#">О проекте</a>
+            <a href="#">Спектакль</a>
+            <a href="#">Мероприятия</a>
+          </div>
+
+          <div class="links-col">
+            <a href="#">Дополнительно</a>
+            <a href="#">Отзывы</a>
+          </div>
+
+        </div>
+
+        <p class="copyright">© 2024 РОСЭПОХА</p>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/filtr.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
